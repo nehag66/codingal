@@ -1,0 +1,108 @@
+.selector {
+  transform: translateY(0);
+}
+
+@keyframes seconds {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-1em);
+  }
+  20% {
+    transform: translateY(-2em);
+  }
+  30% {
+    transform: translateY(-3em);
+  }
+  40% {
+    transform: translateY(-4em);
+  }
+  50% {
+    transform: translateY(-5em);
+  }
+  60% {
+    transform: translateY(-6em);
+  }
+  70% {
+    transform: translateY(-7em);
+  }
+  80% {
+    transform: translateY(-8em);
+  }
+  90% {
+    transform: translateY(-10em);
+    width: 0;
+  }
+  100% {
+    transform: translateY(-10em);
+    width: 0;
+  }
+}
+
+@keyframes milliseconds {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-1em);
+  }
+  20% {
+    transform: translateY(-2em);
+  }
+  30% {
+    transform: translateY(-3em);
+  }
+  40% {
+    transform: translateY(-4em);
+  }
+  50% {
+    transform: translateY(-5em);
+  }
+  60% {
+    transform: translateY(-6em);
+  }
+  70% {
+    transform: translateY(-7em);
+  }
+  80% {
+    transform: translateY(-8em);
+  }
+  90% {
+    transform: translateY(-9em);
+  }
+  100% {
+    transform: translateY(-9em);
+  }
+}
+
+.seconds {
+  animation: seconds 10s 1 step-end forwards;
+}
+
+.milliseconds {
+  animation: milliseconds 1s 10 step-end forwards;
+}
+
+.timer-container {
+  display: flex;
+  height: 100vh; /* height can be anything */
+}
+
+.timer {
+  overflow: hidden;
+  margin: auto;
+  height: 1em;
+  width: 2ch;
+  text-align: center;
+}
+
+.digit {
+  display: inline-block;
+}
+
+.digit span {
+  display: block;
+  width: 100%;
+  height: 1em;
+}
