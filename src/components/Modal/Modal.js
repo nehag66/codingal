@@ -11,7 +11,7 @@ import {
 } from "reactstrap";
 
 const ModalExample = (props) => {
-  const { EndClass, className } = props;
+  const { className } = props;
 
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);

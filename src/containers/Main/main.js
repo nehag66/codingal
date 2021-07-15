@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Navibar from "../../components/Navbar/Navbar";
 
 const Main = () => {
   return (
-    <div>
+    <div align="center">
       <Navibar />
       <h1>HELLO WELCOME TO CODINGAL!!!</h1>
       <h4>Click on Posts in the navigation bar to see all the posts.</h4>

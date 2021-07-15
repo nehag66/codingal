@@ -31,8 +31,8 @@ const Posts = (props) => {
           {posts.map((post) => (
             <ListGroup key={post.id}>
               <ListGroupItem>
-                <ListGroupItemHeading>{post.title}</ListGroupItemHeading>
-                <ListGroupItemText>{post.body}</ListGroupItemText>
+                <ListGroupItemHeading>Title: {post.title}</ListGroupItemHeading>
+                <ListGroupItemText>Body: {post.body}</ListGroupItemText>
               </ListGroupItem>
             </ListGroup>
           ))}
